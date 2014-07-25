@@ -1,0 +1,88 @@
+/*@import url("http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css");*/
+
+body {
+    background-image: url('../img/wood.jpg');
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+    max-width: 800px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font: normal;
+    line-height: 1.5em;
+    color: #545454;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+}
+
+#container{
+ background-image: url('../img/wood.jpg');
+}
+
+.woodButton
+{
+    background-image: url('../img/wood.jpg');
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    border: 0.15em outset #ffffff;
+    opacity:0.5;
+    box-shadow: 1em 1em 0.5em #050505;
+    color: #ffffff !important;
+    font-weight: normal !important;
+}
+
+#name{
+ text-align: center;   
+}
+
+.flp div {
+    position: relative;
+
+}
+
+.flp input, .flp label {
+
+    display: block;
+    line-height: 1.5em;
+    /*fixed height for FF line height issue.*/
+    /*height = 24(lineheight) + 10*2(padding) + 2(border)*/
+    height: 2.875em;
+    border: 0.063px solid #999;
+    color: #000000;
+
+}
+
+.flp input {
+    padding: 0.625px;
+    outline: none;
+ }
+
+
+.flp label {
+    position: absolute; left: 47%;top:10%;
+    /*left/right padding will be 2px less, adjusted by padding on ch*/
+
+    padding: 0.625em 0.5em;
+    border-color: transparent;
+    color: #666;
+    cursor: text;
+}
+
+/*label styles*/
+.ch {
+    display: block;
+    float: left;
+    position: relative;/* for upward animation*/
+    /*color: red;*/
+    /*border: 1px solid #000000;*/
+    /*border-color: transparent;*/
+}
+
+.ch:first-child {padding-left: 0.125em;}
+.ch:last-child {padding-right: 0.125em;}
+
+/*active input label*/
+.focussed{
+    /*when any input is already focussed clicking on it(label) again won't do anything*/
+    pointer-events: none;
+}
+
